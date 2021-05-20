@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  cups:
+    image: canon-ufr-cups-airprint:latest
+    build:
+      # context: ./cups-avahi-airprint
+      context: ./
+    ports:
+      - 632:631
+    environment:
+      CUPSADMIN: admin
+      CUPSPASSWORD: heslo    
+    volumes:
+      - ./services:/services
+      - ./config:/config
+
