@@ -6,7 +6,7 @@ services:
       # context: ./cups-avahi-airprint
       context: ./
     ports:
-      - 632:631
+      - 631:631
     environment:
       CUPSADMIN: admin
       CUPSPASSWORD: heslo    
